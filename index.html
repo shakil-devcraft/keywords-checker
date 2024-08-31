@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter || Unique Keywords Checker</title>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="./icons/keywords checker.jpg" type="image/x-icon">
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+
+    <div class="container bg-white p-6 rounded-lg shadow-lg max-w-2xl w-full">
+        <h1 class="text-2xl font-bold mb-6 text-center">Word Counter and Unique <span class="text-red-500">Keywords</span> Checker</h1>
+
+        <textarea id="text-input" class="focus:outline-none w-full h-32 p-3 border border-gray-300 rounded mb-4 resize-none" placeholder="Enter your keywords separated by commas..."></textarea>
+        
+        <div class="flex justify-between items-center mb-4">
+            <button id="count-btn" class="bg-black text-gray-300 px-3 md:px-5 py-2 hover:text-white transition-all rounded-sm">Check keywords</button>
+            <div class="flex gap-2 md:gap-3 items-center">
+                <button id="copy-btn" class="bg-black text-gray-300 px-3 md:px-5 py-2 hover:text-white transition-all rounded-sm">Copy <i class='bx bxs-copy'></i></button>
+                <button id="paste-btn" class="bg-black text-gray-300 px-3 md:px-5 py-2 hover:text-white transition-all rounded-sm">Paste <i class='bx bxs-pencil' ></i></button>
+            </div>
+        </div>
+
+        <p id="word-count" class="text-sm font-bold mb-2">Word Count: <span class="text-red-500">0</span></p>
+        <p id="unique-keywords" class="text-sm font-bold mb-2">Unique Keywords: <span class="text-green-500">0</span></p>
+    </div>
+
+    <!-- Include Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
